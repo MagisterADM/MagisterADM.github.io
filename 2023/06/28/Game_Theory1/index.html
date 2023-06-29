@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="在市场经济条件下，众多自利个体的同时行动如何产生经济结果？  策略性的相互依赖（strategic interdependence）多人互动的核心特征之一。每个参与人的收益不仅取决于自己的行为，还取决于其他参与人的行为。并且参与人的最优行动可能取决于对其他参与人行动的预期。 分析该局面的工具就是非合作博弈（noncooperative game theory）。 不同的多人互动问题，参与人之间的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博弈论">
 <meta property="og:url" content="http://example.com/2023/06/28/Game_Theory1/index.html">
 <meta property="og:site_name" content="Blogs">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="在市场经济条件下，众多自利个体的同时行动如何产生经济结果？  策略性的相互依赖（strategic interdependence）多人互动的核心特征之一。每个参与人的收益不仅取决于自己的行为，还取决于其他参与人的行为。并且参与人的最优行动可能取决于对其他参与人行动的预期。 分析该局面的工具就是非合作博弈（noncooperative game theory）。 不同的多人互动问题，参与人之间的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-28T11:40:00.000Z">
-<meta property="article:modified_time" content="2023-06-28T11:40:22.450Z">
+<meta property="article:modified_time" content="2023-06-29T07:34:47.902Z">
 <meta property="article:author" content="Adam Zhang">
 <meta property="article:tag" content="Game theory">
 <meta name="twitter:card" content="summary">
@@ -107,7 +107,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%96%E7%95%A5%E6%80%A7%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BE%9D%E8%B5%96%EF%BC%88strategic-interdependence%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">策略性的相互依赖（strategic interdependence）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%BC%88%E7%9A%84%E7%90%86%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text">博弈的理念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%BC%88%E7%9A%84%E5%B1%95%E5%BC%80%E5%BD%A2%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">博弈的展开形表示法</span></a></li></ol>
       </div>
     
   </span>
@@ -152,19 +152,25 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <blockquote>
+<p>在市场经济条件下，众多自利个体的同时行动如何产生经济结果？</p>
+</blockquote>
+<h2 id="策略性的相互依赖（strategic-interdependence）"><a href="#策略性的相互依赖（strategic-interdependence）" class="headerlink" title="策略性的相互依赖（strategic interdependence）"></a>策略性的相互依赖（strategic interdependence）</h2><p>多人互动的核心特征之一。每个参与人的收益不仅取决于自己的行为，还取决于其他参与人的行为。并且参与人的最优行动可能取决于对其他参与人行动的预期。</p>
+<p>分析该局面的工具就是<strong>非合作博弈</strong>（noncooperative game theory）。</p>
+<p>不同的多人互动问题，参与人之间的策略性依赖程度不一样：</p>
+<ul>
+<li>垄断情形&#x2F;完全竞争情形：策略性依赖程度太小。</li>
+<li>寡头市场等：策略性依赖程度很高。</li>
+</ul>
+<h2 id="博弈的理念"><a href="#博弈的理念" class="headerlink" title="博弈的理念"></a>博弈的理念</h2><p>一群人在<strong>策略性相互依赖</strong>环境下的相互作用的正式描述。博弈的过程需要清楚四件事情：</p>
+<ol>
+<li>参与人（players）：谁参与了博弈？</li>
+<li>规则（rules）：谁在何时行动？他们在行动时知道什么信息？他们能做什么？</li>
+<li>结果（outcomes）：对于参与人们每组可能的行动组合，相应的结果是什么？</li>
+<li>收益（payoffs）：参与人们在各个可能结果上的偏好（即效用函数）是什么样的？</li>
+</ol>
+<p>有些博弈中，一方所得就是另一方所失，这就是零和博弈（zero-sum games）。更多的博弈形式是不限于完全或部分冲突的情形。</p>
+<h2 id="博弈的展开形表示法"><a href="#博弈的展开形表示法" class="headerlink" title="博弈的展开形表示法"></a>博弈的展开形表示法</h2><p>已知上述四种元素，便可以用展开形（extensive form）表示博弈。展开形依赖于博弈树（game tree）</p>
 
   </div>
 </article>
@@ -188,7 +194,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%96%E7%95%A5%E6%80%A7%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BE%9D%E8%B5%96%EF%BC%88strategic-interdependence%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">策略性的相互依赖（strategic interdependence）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%BC%88%E7%9A%84%E7%90%86%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text">博弈的理念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%BC%88%E7%9A%84%E5%B1%95%E5%BC%80%E5%BD%A2%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">博弈的展开形表示法</span></a></li></ol>
       </div>
     
 
